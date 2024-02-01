@@ -7,3 +7,88 @@
 /* index.html all css code */
 
 
+
+/* hero section start */
+
+#hero-sec{
+    width: 100%;
+    min-height: 660px;
+    background-image: url(../images/carousel-1.jpg);
+    background-size: cover;
+}
+
+.hero-sec-bg{
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    min-height: 660px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    width: 70%;
+    color: #fff;
+}
+
+.hero-content h1{
+    font-size: 78px;
+}
+
+.hero-content button{
+    font-size: 18px;
+    padding: 12px 30px;
+    border: none;
+    color: #fff;
+    background-color: #3368C6;
+}
+
+.hero-content button:hover{
+    background-color: #2C59AA;
+}
+
+/* about sec start */
+
+#about-sec{
+    width: 100%;
+}
+
+.about-images-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-images{
+    width: 50%;
+    height: 280px;
+}
+
+.about-images-box .about-images img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-box{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 50%;
+    height: 280px;
+    background-color: #3368C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-box .about-txt{
+    text-align: center;
+    color: #fff;
+}
+
+.about-box .about-txt h2{
+    font-size: 54px;
+    font-weight: 600;
+}
