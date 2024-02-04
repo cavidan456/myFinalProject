@@ -12,6 +12,7 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 80px;
+    width: 100%;
 }
 
 
@@ -19,30 +20,51 @@ main{
 
 #hero-sec{
     width: 100%;
-    min-height: 660px;
-    background-image: url(../images/carousel-1.jpg);
-    background-size: cover;
+    position: relative;
+    display: inline-block;
+    transition-duration: .5s;
 }
 
-.hero-sec-bg{
-    background-color: rgba(0,0,0,.4);
+#hero-sec::before{
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 660px;
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.carousel img{
+    filter: grayscale(40%) contrast(100%) brightness(90%);
+}
+
+.carousel-caption{
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.hero-content{
+.carousel-caption-content-one{
     width: 70%;
-    color: #fff;
+    text-align: left;
 }
 
-.hero-content h1{
+.carousel-caption-content-one h1{
     font-size: 78px;
 }
 
-.hero-content button{
+.carousel-caption-content-two{
+    margin: auto 0 auto auto;
+    width: 70%;
+    text-align: right;
+}
+.carousel-caption-content-two h1{
+    font-size: 78px;
+}
+
+.carousel-caption button{
     font-size: 18px;
     padding: 12px 30px;
     border: none;
@@ -50,7 +72,7 @@ main{
     background-color: #3368C6;
 }
 
-.hero-content button:hover{
+.carousel-caption button:hover{
     background-color: #2C59AA;
 }
 
