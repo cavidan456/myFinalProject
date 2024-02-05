@@ -206,6 +206,8 @@ main{
     width: 100%;
 }
 
+
+
 .services-head{
     width: 100%;
 }
@@ -238,6 +240,11 @@ main{
     padding: 40px 20px;
     background-color: #fff;
 }
+.services-content-cart::before{
+    content: '';
+    width: 100%;
+    height: 0;
+}
 
 .services-content-cart:hover{
     background-color: #3368C6;
@@ -257,4 +264,10 @@ main{
     color: black;
     font-weight: 600;
     padding: 5px 15px;
+}
+
+/* rezerv sec */
+
+#rezerv-sec{
+    width: 100%;
 }

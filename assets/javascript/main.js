@@ -64,3 +64,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(artirSayac, 30);
 });
+
+
+// rezervation section javascript code
+
+const doctors = document.getElementById("doctors");
+
+
+let limit = 8
+
+let page = 1
+
+
+async function getDoctors() {
+    const res= await axios.get(`https://655dd2b79f1e1093c599f093.mockapi.io/project?page=${page}&limit=${limit}`)
+    const data = res.data
+    db = data
+
+    db.forEach(item => {
+        let box = document.createElement("div")
+        box.className = "col-3 mb-5"
+        box.innerHTML=`
+        <div class="card">
+  <img class="card-img-top" src="${item.avatar}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">${item.lastname} ${item.firstname}</h5>
+    <h6 class="card-title">${item.positionJop}</h6>
+    <p class="card-text">${item.description}</p>
+    <a href="#" class="btn btn-primary">Rezerv</a>
+  </div>
+</div>`
+        doctors.appendChild(box)
+    });
+}
+
+getDoctors()
