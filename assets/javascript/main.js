@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(artirSayac, 30);
 });
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var sayacElementi = document.getElementById("nomrem2");
     var sayacDegeri = 6000;
@@ -80,7 +82,6 @@ async function getDoctors() {
     const res= await axios.get(`https://655dd2b79f1e1093c599f093.mockapi.io/project?page=${page}&limit=${limit}`)
     const data = res.data
     db = data
-
     db.forEach(item => {
         let box = document.createElement("div")
         box.className = "col-3 mb-5"
@@ -91,7 +92,7 @@ async function getDoctors() {
     <h5 class="card-title">${item.lastname} ${item.firstname}</h5>
     <h6 class="card-title">${item.positionJop}</h6>
     <p class="card-text">${item.description}</p>
-    <a href="#" class="btn btn-primary">Rezerv</a>
+    <button class="btn btn-primary" onclick="addCart(${item.id})">Rezerv</button>
   </div>
 </div>`
         doctors.appendChild(box)
@@ -99,3 +100,14 @@ async function getDoctors() {
 }
 
 getDoctors()
+
+function addCart(id) {
+    let cart = JSON.parse(localStorage.getItem("cart"))||[]
+    doctorRezerv = cart.find((item)=>item.id == id)
+    if (doctorRezerv) {
+        alert("rezervsyon istegi zeten gonderildi")
+    }else{
+        cart.push(db.find((item) => item.id == id))
+        localStorage.setItem("cart" , JSON.stringify(cart))
+    }
+}

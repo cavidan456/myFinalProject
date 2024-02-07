@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezervation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/form.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section id="form-sec">
+        <div class="container">
+          <form>
+            <div class="form-group">
+              <label for="fullname">Fullname(name and lastname)</label>
+              <input
+                type="text"
+                id="fullname"
+                class="form-control"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1"
+                >Gerekli uzmani seciniz</label
+              >
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Genel Muayene</option>
+                <option>Kulak Burun Boğaz Hastalıkları</option>
+                <option>Göz Hastalıkları</option>
+                <option>Çocuk Sağlığı ve Hastalıkları</option>
+                <option>Nöroloji Salık Sorunları</option>
+                <option>Ortopedi ve Travmatoloji Salık Sorunları</option>
+                <option>Kadın Hastalıkları</option>
+                <option>Dermotoloji</option>
+              </select>
+            </div>
+            <div class="row mb-3">
+              <div class="col-12 col-lg col-xl">
+                <select class="form-control" id="citySelect">
+                  <option>Bakı</option>
+                  <option>Gəncə</option>
+                  <option>Lənkəran</option>
+                  <option>Sumqayıt</option>
+                  <option>Ağdam</option>
+                  <option>Şuşa</option>
+                  <option>Fizuli</option>
+                  <option>Kürdəmir</option>
+                  <option>Balakən</option>
+                  <option>Quba</option>
+                </select>
+              </div>
+              <div class="col-12 col-lg col-xl">
+                <input class="form-control" type="date" />
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-50">Submit</button>
+          </form>
+        </div>
+      </section>
+      <section id="chat-sec">
+        <div id="chatBox" class="chat-container">
+          <div class="chat-head">
+            <h2>Yardim ve Desdek</h2>
+          </div>
+          <div class="chat-messages">
+            <ul class="chat-messages-list" id="chat-list">
+              <li class="chat-message">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                accusamus et delectus quia doloremque blanditiis enim?
+              </li>
+              <li class="chat-message myMessage">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
+                eaque ut laboriosam ipsum ratione doloremque quam.
+              </li>
+            </ul>
+          </div>
+          <div class="chat-input">
+            <input id="chatInput"  type="text" placeholder="mesaj giriniz">
+            <button id="chatBtn" class="btn btn-info"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </div>
+        <button id="chatActiveBtn" class="btn btn-dark">
+          <i class="fa-solid fa-comment"></i>
+        </button>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/javascript/form.js"></script>
+  </body>
+</html>
