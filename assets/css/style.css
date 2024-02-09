@@ -6,6 +6,55 @@
 
 /* index.html all css code */
 
+.containers {
+    width: 85%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-info-item .txt {
+    color: #ABB0C3;
+}
+
+.header-info-item .header-links {
+    display: flex;
+    gap: 10px;
+}
+
+.header-info-item .header-links a {
+    position: relative;
+    color: #ABB0C3;
+    text-decoration: none;
+}
+
+
+.header-info-item .header-links a::after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #ABB0C3;
+    position: absolute;
+    transform: rotate(30deg);
+    top: 5px;
+    right: -5px;
+}
+
 
 main {
     background-color: #F6FAFF;
@@ -176,10 +225,22 @@ main {
 }
 
 
-.feature-text {
+.feature-text.line {
     width: 100%;
-    border-right: 1px solid #e2e2e2;
+    position: relative;
 }
+
+.feature-text.line::after {
+    content: '';
+    width: 1px;
+    height: 250%; /* Çizgiyi .feature-text'in tam yüksekliği boyunca uzatır */
+    position: absolute;
+    left: 100%; /* .feature-text'in sağ kenarında konumlandırır */
+    top: -80px;
+    background-color: #e2e2e2;
+    z-index: 5;
+}
+
 
 .feature-text i {
     position: absolute;
@@ -209,11 +270,10 @@ main {
     width: 100%;
 }
 
-
-
 .services-head {
     width: 100%;
 }
+
 
 .services-head-text {
     width: 60%;
@@ -290,19 +350,21 @@ main {
     justify-content: center;
 }
 
-.team-member-bio h2{
+.team-member-bio h2 {
     color: #031B4E;
 }
 
-.team-member-bio p{
+.team-member-bio p {
     color: #ABB0C3;
 }
 
-.member-social-media{
+.member-social-media {
     display: flex;
     gap: 20px;
 }
-.member-social-media .icons{
+
+.member-social-media .icons {
+    cursor: pointer;
     width: 40px;
     height: 40px;
     display: flex;
@@ -314,12 +376,61 @@ main {
     transition-duration: .5s;
 }
 
-.member-social-media .icons:hover{
+.member-social-media .icons:hover {
     background-color: #29529e;
 }
 
-/* team section stop */
-
-img{
+.team-member-cart {
     width: 100%;
+    height: auto;
+    position: relative;
 }
+
+.team-member-cart .cart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member-cart .cart img {
+    width: 100%;
+    height: 80%;
+}
+
+.team-member-cart .cart .text {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.team-member-cart .social-media {
+    position: absolute;
+    top: 0;
+    background-color: #3368C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 82%;
+    width: 100%;
+    visibility: hidden;
+}
+
+.social-media .icons {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.team-member-cart:hover .social-media {
+    visibility: visible;
+}
+
+/* team section stop */
