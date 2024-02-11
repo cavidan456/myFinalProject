@@ -1,22 +1,22 @@
-const rezervasyon = document.getElementById("rezervasyon")
+const rezervation = document.getElementById("rezervation");
 
-function requestGet() {
-    let cart = JSON.parse(localStorage.getItem("cart"))||[]
-    db = cart
-    db.forEach(item => {
-        let box = document.createElement("div")
-        box.className = "col-12"
-        box.innerHTML = `
-        <div class="request-text">
-  <h2></h2>
-  <p>
-    Bir Kullanici x hekimini icin y tarihine rezervasyon yapdirmak istiyor.
-    hastanin rezervasyon istegi kabul edilsin mi ?
-  </p>
-  <button class="btn btn-success">kabul et</button>
-  <button class="btn btn-danger">redd et</button>
-</div>`
-    });
+async function rezervationGet() {
+  const res = await axios.get(`https://655dd2b79f1e1093c599f093.mockapi.io/project`)
+  const data = res.data;
+  db = data;
+  db.forEach((item) => {
+    let box = document.createElement("div");
+    box.className = "col-4 mb-3"
+    box.innerHTML = `
+    <h2>${item.fullname}</h2>
+<p>${item.email}</p>
+<p>${item.illness}</p>
+<p>${item.city}</p>
+<p>${item.time}</p>
+<span>${item.message}</span>
+    `;
+    rezervation.appendChild(box)
+  });
 }
 
-
+rezervationGet()
