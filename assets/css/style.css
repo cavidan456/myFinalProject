@@ -520,6 +520,8 @@ main {
 /* team section stop */
 
 
+/* comment section start */
+
 #comment-sec{
     width: 100%;
     min-height: 400px;
@@ -527,6 +529,30 @@ main {
     background-size: cover;
 }
 
+.section-text h3{
+    color: #fff;
+    font-size:43px;
+}
+
+.section-text p{
+    color: #fff;
+    font-size: 18px;
+}
+
+.section-text button{
+    color: #fff;
+    background-color: #3368C6;
+    font-weight: 600;
+    border: none;
+    padding: 15px 35px;
+}
+
 .section-comment{
     background-color: #fff;
 }
+
+
+
+
+
+/* comment section stop  */
