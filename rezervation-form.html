@@ -20,73 +20,186 @@
     <link rel="stylesheet" href="./assets/css/form.css" />
   </head>
   <body>
-    <header></header>
+    <header class="mb-5">
+      <div class="info-bg">
+        <div class="containers">
+            <div class="header-info">
+              <div class="header-info-item">
+                <div class="txt">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>123 Street, New York, USA</span>
+                </div>
+                <div class="txt">
+                  <i class="fa-solid fa-clock"></i>
+                  <span>Mon-Sat 09am-5pm, Sun Closed</span>
+                </div>
+              </div>
+              <div class="header-info-item">
+                <div class="header-links">
+                  <a href="#">Career</a>
+                  <a href="#">Support</a>
+                  <a href="#">Terms</a>
+                  <a href="#">FAQs</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+        <div class="containers">
+          <div class="header-labsky">
+            <div class="header-labsky-item">
+              <div class="icons">
+                <i class="bi bi-telephone-inbound"></i>
+              </div>
+              <div class="text">
+                <h5>Call Now</h5>
+                <p>+012 345 6789</p>
+              </div>
+            </div>
+            <div class="logo-labsky">
+              <h2>Lab<span>sky</span></h2>
+            </div>
+            <div class="header-labsky-item">
+              <div class="icons">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="text">
+                <h5>Mail Now</h5>
+                <p>info@example.com</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link main-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-social-media">
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section id="form-sec">
-        <div class="container">
-          <form>
-            <div class="form-group">
-              <label for="fullname">Fullname(name and lastname)</label>
-              <input
-                type="text"
-                id="fullname"
-                class="form-control"
-                placeholder="Enter Name"
-                required
-              />
+        <div class="containers">
+          <div class="row">
+            <div class="col-12 col-lg-6 col-xl-6 mb-5">
+              <form>
+                <div class="form-group">
+                  <label for="fullname">Fullname(name and lastname)</label>
+                  <input
+                    type="text"
+                    id="fullname"
+                    class="form-control"
+                    placeholder="Enter Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1"
+                    >Gerekli uzmani seciniz</label
+                  >
+                  <select class="form-control" id="illness">
+                    <option>General Examination</option>
+                    <option>Ear, Nose, and Throat Diseases</option>
+                    <option>Eye Diseases</option>
+                    <option>Pediatrics</option>
+                    <option>Neurological Health Issues</option>
+                    <option>Orthopedics and Traumatology Health Issues</option>
+                    <option>Gynecology</option>
+                    <option>Dermatology</option>
+                  </select>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-12 col-lg col-xl mb-3 mt-3">
+                    <select class="form-control" id="city">
+                      <option>New York City</option>
+                      <option>Buffalo</option>
+                      <option>Rochester</option>
+                      <option>Yonkers</option>
+                      <option>Syracuse</option>
+                      <option>Albany</option>
+                      <option>New Rochelle</option>
+                      <option>Mount Vernon</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-lg col-xl mb-3 mt-3">
+                    <input
+                      id="timeInp"
+                      class="form-control"
+                      type="datetime-local"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="messageInp"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Submit
+                </button>
+              </form>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1"
-                >Gerekli uzmani seciniz</label
-              >
-              <select class="form-control" id="illness">
-                <option>General Examination</option>
-                <option>Ear, Nose, and Throat Diseases</option>
-                <option>Eye Diseases</option>
-                <option>Pediatrics</option>
-                <option>Neurological Health Issues</option>
-                <option>Orthopedics and Traumatology Health Issues</option>
-                <option>Gynecology</option>
-                <option>Dermatology</option>
-              </select>
-            </div>
-            <div class="row mb-3">
-              <div class="col-12 col-lg col-xl">
-                <select class="form-control" id="city">
-                  <option>New York City</option>
-                  <option>Buffalo</option>
-                  <option>Rochester</option>
-                  <option>Yonkers</option>
-                  <option>Syracuse</option>
-                  <option>Albany</option>
-                  <option>New Rochelle</option>
-                  <option>Mount Vernon</option>
-                </select>
+            <div class="col-12 col-lg-6 col-xl-6 mb-5">
+              <div class="form-text">
+                <h2>Please fill out the form so that we can assist you better.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi ratione, laudantium culpa quia cupiditate distinctio ducimus ipsam, debitis mollitia hic repellendus omnis repellat delectus cum commodi dolorem consectetur voluptate, praesentium reiciendis. Accusamus corrupti qui ipsam alias repellendus maiores accusantium sequi veritatis, quam aspernatur error?</p>
               </div>
-              <div class="col-12 col-lg col-xl">
-                <input id="timeInp" class="form-control" type="datetime-local" required />
-              </div>
             </div>
-            <div class="form-group">
-              <textarea
-                id="messageInp"
-                class="form-control"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-50">Submit</button>
-          </form>
+          </div>
         </div>
       </section>
       <section id="chat-sec">
@@ -118,7 +231,7 @@
         </button>
       </section>
       <section id="rezervation-tablo-sec" class="mt-5">
-        <div class="container">
+        <div class="containers">
           <table class="table">
             <thead>
               <tr>

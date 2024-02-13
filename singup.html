@@ -3,40 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Labsky | login</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <link rel="stylesheet" href="./assets/css/singup.css" />
   </head>
   <body>
-    <header></header>
     <main>
       <section>
-        <div class="container">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Passient Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Treatment type</th>
-                <th scope="col">Date</th>
-                <th scope="col">Time</th>
-                <th scope="col">Process</th>
-              </tr>
-            </thead>
-            <tbody id="rezervation">
-
-            </tbody>
-          </table>
+        <div class="section-bg">
+          <div class="container">
+            <div class="form-box">
+              <form>
+                <h2>Labsky | Sing Up</h2>
+                <input type="text" id="fullname" placeholder="Enter You Fullname" required />
+                <input type="date" id="youDate" required />
+                <input type="email" id="email" placeholder="Enter You Email" required />
+                <input type="password" id="password" placeholder="Enter You Password"required/>
+                <button type="submit">Sing Up</button>
+                <p>Hesabiniz zaten varmı ? <a href="./login.html">Giris yap</a></p>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -53,6 +48,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/javascript/admin.js"></script>
+    <script src="./assets/javascript/singup.js"></script>
   </body>
 </html>
+

@@ -8,8 +8,28 @@ section {
     width: 100%;
 }
 
-.col-4{
-    background-color: #232323;
+#accept{
+    cursor: pointer;
+    background-color: #02b902;
     color: #fff;
-    
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+#accept:hover{
+    background-color: #029002;
+}
+
+#reject{
+    cursor: pointer;
+    background-color: #d32c2c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+#reject:hover{
+    background-color: #b82626;
 }

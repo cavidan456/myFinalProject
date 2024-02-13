@@ -1,0 +1,116 @@
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/carousel-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    align-items: center;
+}
+
+.form-box {
+    width: 450px;
+    height: 600px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, .6);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 75%;
+}
+
+.form-box form input {
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    font-size: 22px;
+    width: 95%;
+}
+
+.form-box form input::placeholder {
+    color: #fff;
+}
+
+.form-box h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.form-box p{
+    color: #fff;
+}
+
+.form-box form button {
+    text-align: center;
+    border: none;
+    background-color: #0074D9;
+    color: #fff;
+    font-weight: 700;
+    width: 100px;
+    height: 40px;
+    font-size: 21px;
+    border-radius: 35px;
+}
+
+.form-box form button:hover {
+    background-color: #0a518f;
+}
+
+@media only screen and (max-width:480px) {
+    .form-box {
+        width: 95%;
+        height: 450px;
+        backdrop-filter: blur(5px);
+    }
+
+    .form-box form {
+        gap: 15px;
+    }
+
+    .form-box form input {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .form-box form button{
+        width: 75px;
+        height: 30px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .form-box h2{
+        font-size: 23px;
+        font-weight: 600;
+    }
+
+    .form-box p{
+        font-size: 12px;
+    }
+}

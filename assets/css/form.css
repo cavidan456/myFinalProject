@@ -4,6 +4,139 @@
     box-sizing: border-box;
 }
 
+.containers{
+    width: 85%;
+    margin: auto;
+}
+/* header css code  */
+header {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: #3368C6;
+}
+
+.info-bg{
+    background-color: #fff;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header-info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-info-item .txt {
+    color: #ABB0C3;
+}
+
+.header-info-item .header-links {
+    display: flex;
+    gap: 10px;
+}
+
+.header-info-item .header-links a {
+    position: relative;
+    color: #ABB0C3;
+    text-decoration: none;
+}
+
+
+.header-info-item .header-links a::after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #ABB0C3;
+    position: absolute;
+    transform: rotate(30deg);
+    top: 5px;
+    right: -5px;
+}
+
+
+
+header .header-labsky{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header .header-labsky .header-labsky-item{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+
+header .header-labsky .header-labsky-item .icons{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+}
+
+.logo-labsky{
+    color: #fff;
+}
+
+.logo-labsky span{
+    color: #031B4E;
+}
+
+/* navbar css code */
+nav{
+    position: absolute;/* headere gore yerini teyin edirik*/
+    bottom: -10px;
+    width: 85%;
+    margin: auto;
+    z-index: 3;
+}
+
+
+.nav-link{
+    color: #031B4E;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.main-link{
+    color: #2C59AA;
+}
+
+.navbar-social-media{
+    display: flex;
+    justify-content: center;align-items: center;
+    gap: 10px;
+}
+
+.navbar-social-media .icons{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #3368C6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-social-media .icons:hover{
+    background-color: #2C59AA;
+}
+
+.navbar-social-media .icons a{
+    color: #fff;
+}
+
 /* chat active btn css */
 
 
@@ -109,3 +242,20 @@ th ,td{
     max-width: 150px;
     text-align: center;
 }
+
+@media only screen and (max-width: 480px) {
+    #rezervation-tablo-sec .container {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+  
+    #rezervation-tablo-sec .table {
+      font-size: 14px;
+    }
+  
+    #rezervation-tablo-sec th,
+    #rezervation-tablo-sec td {
+      padding: 8px;
+    }
+  }
+  

@@ -16,8 +16,12 @@ const chatList = document.getElementById("chat-list");
 chatBtn.addEventListener("click", function chatAdd() {
   let message = document.createElement("li");
   message.className = "chat-message myMessage";
-  message.innerHTML = chatInput.value;
-  chatList.appendChild(message);
+  if (chatInput.value.trim().length > 0) {
+    message.innerHTML = chatInput.value;
+    chatList.appendChild(message);
+  }else{
+    alert("Enter You Message")
+  }
   chatInput.value = "";
 });
 
@@ -46,6 +50,7 @@ function rezervationPost(event) {
     .then((res) => {
       console.log(res);
       form.reset();
+      getClient()
     });
 }
 
@@ -66,8 +71,8 @@ async function getClient() {
       <th scope="row">${item.id}</th>
       <td>${item.fullname}</td>
       <td>${item.email}</td>
-      <td>${item.illness.substr(0,15)}...</td>
-      <td>${item.time.substr(-4)}</td>
+      <td>${item.illness.substr(0,20)}</td>
+      <td>${item.time.substr(-5)}</td>
       <td>${item.time.substr(0,10)}</td>
       <td><button data-id="${item.id}" class="btn ${item.durum === 'beklemede' ? 'text-primary' : item.durum === 'kabul edildi' ? 'text-success' : 'text-danger'}">${item.durum}</button></td>
     `;
@@ -84,7 +89,7 @@ async function updateButtonColor(id, newStatus) {
     const button = document.querySelector(`#clientTablo button[data-id="${id}"]`);
   
     if (button) {
-      button.textContent = newStatus; // Durumu güncelle
+      button.textContent = newStatus;
   
       if (newStatus === 'kabul edildi') {
         button.classList.add('text-success');

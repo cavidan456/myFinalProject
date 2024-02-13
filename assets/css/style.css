@@ -547,12 +547,38 @@ main {
     padding: 15px 35px;
 }
 
+.section-text button{
+    
+}
+
 .section-comment{
     background-color: #fff;
 }
 
 
+.carousel-client{
+    display: flex;
+    gap: 10px;
+}
 
+.carousel-client p{
+    color: #29529e;
+}
+
+.carousel-client img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.carousel-item i{
+    font-size: 54px;
+}
+
+.d-block>p{
+    font-size: 19px;
+    color: #ABB0C3;
+}
 
 
 /* comment section stop  */
