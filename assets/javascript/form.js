@@ -1,32 +1,4 @@
-const chat = document.getElementById("chatBox");
-const chatActiveBtn = document.getElementById("chatActiveBtn");
-
-chatActiveBtn.addEventListener("click", function chatActive() {
-  if (chat.className == "chat-container") {
-    chat.className = "chat-container chat-active";
-  } else {
-    chat.className = "chat-container";
-  }
-});
-
-const chatBtn = document.getElementById("chatBtn");
-const chatInput = document.getElementById("chatInput");
-const chatList = document.getElementById("chat-list");
-
-chatBtn.addEventListener("click", function chatAdd() {
-  let message = document.createElement("li");
-  message.className = "chat-message myMessage";
-  if (chatInput.value.trim().length > 0) {
-    message.innerHTML = chatInput.value;
-    chatList.appendChild(message);
-  }else{
-    alert("Enter You Message")
-  }
-  chatInput.value = "";
-});
-
 // form post
-
 const fullname = document.getElementById("fullname");
 const email = document.getElementById("email");
 const illnessSelect = document.getElementById("illness");
@@ -70,10 +42,10 @@ async function getClient() {
     tableTr.innerHTML = `
       <th scope="row">${item.id}</th>
       <td>${item.fullname}</td>
-      <td>${item.email}</td>
-      <td>${item.illness.substr(0,20)}</td>
-      <td>${item.time.substr(-5)}</td>
-      <td>${item.time.substr(0,10)}</td>
+      <td class="col-nan" >${item.email}</td>
+      <td class="col-nan" >${item.illness.substr(0,20)}</td>
+      <td class="col-nan" >${item.time.substr(-5)}</td>
+      <td class="col-nan" >${item.time.substr(0,10)}</td>
       <td><button data-id="${item.id}" class="btn ${item.durum === 'beklemede' ? 'text-primary' : item.durum === 'kabul edildi' ? 'text-success' : 'text-danger'}">${item.durum}</button></td>
     `;
     clientTablo.appendChild(tableTr);

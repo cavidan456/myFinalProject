@@ -29,9 +29,9 @@ async function registerUser() {
         email: email.value,
         password: password.value,
       });
-      console.log("Kullanıcı kaydedildi: " + fullname.value);
+      alert("kayit islemi basarili artik giris yap kismindan giris yapabilirsiniz");
       form.reset()
-      return true; 
+      return true;
     }
   } catch (error) {
     console.error("Kayıt işlemi sırasında bir hata oluştu:", error);

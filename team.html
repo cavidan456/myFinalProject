@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rezervation</title>
+    <title>Labsky</title>
+    <!-- font aweysome css , style.css , bootstrap css update -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -17,8 +25,8 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/form.css" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
@@ -134,118 +142,171 @@
       </nav>
     </header>
     <main>
-      <section id="page-main-sec">
-          <div class="page-main-sec-bg">
-              <div class="containers">
-                  <div class="main-carts">
-                      <h1>Rezervation</h1>
-                      <p> <a href="#">Home</a> / <a href="#">Pages</a> / <a href="#">Rezervation</a></p>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <section id="form-sec">
+        <section id="page-main-sec">
+            <div class="page-main-sec-bg">
+                <div class="containers">
+                    <div class="main-carts">
+                        <h1>Our Team</h1>
+                        <p> <a href="#">Home</a> / <a href="#">Pages</a> / <a href="#">Our Team</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <section id="team-sec">
         <div class="containers">
           <div class="row">
-            <div class="col-12 col-lg-6 col-xl-6 mb-5">
-              <form>
-                <div class="form-group">
-                  <label for="fullname">Fullname(name and lastname)</label>
-                  <input
-                    type="text"
-                    id="fullname"
-                    class="form-control"
-                    placeholder="Enter Name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email address</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1"
-                    >Gerekli uzmani seciniz</label
-                  >
-                  <select class="form-control" id="illness">
-                    <option>General Examination</option>
-                    <option>Ear, Nose, and Throat Diseases</option>
-                    <option>Eye Diseases</option>
-                    <option>Pediatrics</option>
-                    <option>Neurological Health Issues</option>
-                    <option>Orthopedics and Traumatology Health Issues</option>
-                    <option>Gynecology</option>
-                    <option>Dermatology</option>
-                  </select>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-12 col-lg col-xl mb-3 mt-3">
-                    <select class="form-control" id="city">
-                      <option>New York City</option>
-                      <option>Buffalo</option>
-                      <option>Rochester</option>
-                      <option>Yonkers</option>
-                      <option>Syracuse</option>
-                      <option>Albany</option>
-                      <option>New Rochelle</option>
-                      <option>Mount Vernon</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-lg col-xl mb-3 mt-3">
-                    <input
-                      id="timeInp"
-                      class="form-control"
-                      type="datetime-local"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group">
-                  <textarea
-                    id="messageInp"
-                    class="form-control"
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">
-                  Submit
-                </button>
-              </form>
+            <div class="col-12 col-lg-6 col-xl-6">
+              <div class="team-img">
+                <img src="./assets/images/team-1.jpg" alt="team-1-images" />
+              </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-6 mb-5">
-              <div class="form-text">
-                <h2>Please fill out the form so that we can assist you better.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi ratione, laudantium culpa quia cupiditate distinctio ducimus ipsam, debitis mollitia hic repellendus omnis repellat delectus cum commodi dolorem consectetur voluptate, praesentium reiciendis. Accusamus corrupti qui ipsam alias repellendus maiores accusantium sequi veritatis, quam aspernatur error?</p>
+            <div class="col-12 col-lg-6 col-xl-6">
+              <div class="team-member-bio">
+                <div class="member-bio-head">
+                  <h2>Dr. John Martin</h2>
+                  <p>CEO & Founder</p>
+                  <p>Labsky, New York, USA</p>
+                </div>
+                <div class="member-bio-main">
+                  <h2>Biography</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur tellus augue, iaculis id elit eget, ultrices
+                    pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu
+                    quis, fringilla risus. Pellentesque eu consequat augue.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur tellus augue, iaculis id elit eget, ultrices
+                    pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu
+                    quis, fringilla risus. Pellentesque eu consequat augue.
+                  </p>
+                  <div class="member-social-media">
+                    <div class="icons">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icons">
+                      <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icons">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="icons">
+                      <i class="fa-brands fa-youtube"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-5">
+              <div class="team-member-cart">
+                <div class="cart">
+                  <div class="cart-images">
+                    <img src="./assets/images/team-2.jpg" alt="team-2-images" />
+                    <div class="social-media">
+                      <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h3>Alex Robin</h3>
+                    <p>Lab Assistant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-5">
+              <div class="team-member-cart">
+                <div class="cart">
+                  <div class="cart-images">
+                    <img src="./assets/images/team-3.jpg" alt="team-2-images" />
+                    <div class="social-media">
+                      <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h3>Andrew Bon</h3>
+                    <p>Lab Assistant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-5">
+              <div class="team-member-cart">
+                <div class="cart">
+                  <div class="cart-images">
+                    <img src="./assets/images/team-4.jpg" alt="team-2-images" />
+                    <div class="social-media">
+                      <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h3>Martin Tompson</h3>
+                    <p>Lab Assistant</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mt-5">
+              <div class="team-member-cart">
+                <div class="cart">
+                  <div class="cart-images">
+                    <img src="./assets/images/team-5.jpg" alt="team-2-images" />
+                    <div class="social-media">
+                      <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </div>
+                      <div class="icons">
+                        <i class="fa-brands fa-youtube"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text">
+                    <h3>Clarabelle Samber</h3>
+                    <p>Lab Assistant</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section id="rezervation-tablo-sec" class="mt-5">
-        <div class="containers">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Client Fullname</th>
-                <th class="col-nan" scope="col">Client Email</th>
-                <th class="col-nan" scope="col">Client İllness</th>
-                <th class="col-nan" scope="col">Rezervation Time</th>
-                <th class="col-nan" scope="col">Rezervation Data</th>
-                <th scope="col">Durum Takib</th>
-              </tr>
-            </thead>
-            <tbody id="clientTablo">
-              <!-- tablonun iceriyi -->
-            </tbody>
-          </table>
         </div>
       </section>
     </main>
@@ -314,6 +375,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- axios,bootstrap and main.js update -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -331,6 +394,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/javascript/main.js"></script>
-    <script src="./assets/javascript/form.js"></script>
   </body>
 </html>
